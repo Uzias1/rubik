@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8/06/2023, 10:12:44 PM
+    Author     : Uzías
+    
+    Acceder a una variable global:
+    color: var(--nombre);
+
+    Estilos para diseño principal
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;800&display=swap');
+
+
+:root {
+    --fondo: #F0F4FE;
+    --fuente: #00100B;
+    --principal: #D1071E;
+    --secundario: #046DE9;
+    --extra: #02B629;
+}
+
+* {
+    font-family: 'Roboto Slab', serif;
+    color: var(--fuente);
+}
+
+body {
+    background-color: var(--fondo);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.barra {
+    background-color: var(--principal);
+}
+
+.barra a {
+    color: var(--fondo);
+}
+
+.cfuente {
+    background-color: var(--secundario);
+}
+
+.btn_primario {
+    background-color: var(--secundario);
+    color: var(--fuente);
+}
+
+.btn_primario:hover {
+    border-color: var(--secundario);
+    border-width: medium;
+}
+
+.btn_secundario {
+    background-color: var(--extra);
+}
+
+.btn_secundario:hover {
+    border-color: var(--extra);
+    border-width: medium;
+}
+
+/* Estilos para el cronómetro */
+.timer {
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.inicio input, .registro input {
+    max-width: 100%;
+}
+
+.registro {
+    border: 1px solid var(--principal);
+    border-radius: 0.5rem;
+    width: 500px;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.inicio {
+    border: 1px solid var(--principal);
+    border-radius: 0.5rem;
+    width: 500px;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tablaStats th{
+    background-color: var(--extra);
+}
+
+.tablaStats td{
+    background-color: var(--primario);
+    color: var(--fuente);
+}
